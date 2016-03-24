@@ -59,16 +59,16 @@
 
 
 
-<meta name="description" content="关于沉浸式状态栏虽然一直见过，但是没怎么写过，最近看到SystemBarTint（原谅我知道的太晚，，，），搜了一下相关资料，觉得挺简单，就用来简单的写一下。先来看一下SystemBarTint的简单介绍：    1234567891011@Override  protected void onCreate(Bundle savedInstanceState) &amp;#123;     super.o">
+<meta name="description" content="Rxjava:扩展的观察者模式RxJava 有四个基本概念：Observable (可观察者，即被观察者)、 Observer (观察者)、 subscribe (订阅)、事件。Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。与传统观察者模式不同， RxJava 的事件回调方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Toolbar沉浸式状态栏">
-<meta property="og:url" content="http://yoursite.com/2016/03/22/Toolbar沉浸式状态栏/index.html">
+<meta property="og:title" content="RxJava,Retrofit在Android中的使用初探">
+<meta property="og:url" content="http://yoursite.com/2016/03/23/RxJava,Retrofit在Android中的使用初探/index.html">
 <meta property="og:site_name" content="wk.Joe">
-<meta property="og:description" content="关于沉浸式状态栏虽然一直见过，但是没怎么写过，最近看到SystemBarTint（原谅我知道的太晚，，，），搜了一下相关资料，觉得挺简单，就用来简单的写一下。先来看一下SystemBarTint的简单介绍：    1234567891011@Override  protected void onCreate(Bundle savedInstanceState) &amp;#123;     super.o">
-<meta property="og:updated_time" content="2016-03-22T15:10:18.371Z">
+<meta property="og:description" content="Rxjava:扩展的观察者模式RxJava 有四个基本概念：Observable (可观察者，即被观察者)、 Observer (观察者)、 subscribe (订阅)、事件。Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。与传统观察者模式不同， RxJava 的事件回调方法">
+<meta property="og:updated_time" content="2016-03-24T13:14:39.225Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Toolbar沉浸式状态栏">
-<meta name="twitter:description" content="关于沉浸式状态栏虽然一直见过，但是没怎么写过，最近看到SystemBarTint（原谅我知道的太晚，，，），搜了一下相关资料，觉得挺简单，就用来简单的写一下。先来看一下SystemBarTint的简单介绍：    1234567891011@Override  protected void onCreate(Bundle savedInstanceState) &amp;#123;     super.o">
+<meta name="twitter:title" content="RxJava,Retrofit在Android中的使用初探">
+<meta name="twitter:description" content="Rxjava:扩展的观察者模式RxJava 有四个基本概念：Observable (可观察者，即被观察者)、 Observer (观察者)、 subscribe (订阅)、事件。Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。与传统观察者模式不同， RxJava 的事件回调方法">
 
 
 
@@ -86,7 +86,7 @@
   };
 </script>
 
-  <title> Toolbar沉浸式状态栏 | wk.Joe </title>
+  <title> RxJava,Retrofit在Android中的使用初探 | wk.Joe </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -228,7 +228,7 @@
             
             
               
-                Toolbar沉浸式状态栏
+                RxJava,Retrofit在Android中的使用初探
               
             
           </h1>
@@ -240,8 +240,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-22T22:06:37+08:00" content="2016-03-22">
-              2016-03-22
+            <time itemprop="dateCreated" datetime="2016-03-23T21:56:19+08:00" content="2016-03-23">
+              2016-03-23
             </time>
           </span>
 
@@ -254,8 +254,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
+                  <a href="/categories/andriod/" itemprop="url" rel="index">
+                    <span itemprop="name">andriod</span>
                   </a>
                 </span>
 
@@ -270,8 +270,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/22/Toolbar沉浸式状态栏/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/22/Toolbar沉浸式状态栏/" itemprop="commentsCount"></span>
+                <a href="/2016/03/23/RxJava,Retrofit在Android中的使用初探/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/23/RxJava,Retrofit在Android中的使用初探/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -293,17 +293,11 @@
       
 
       
-        <p>关于沉浸式状态栏虽然一直见过，但是没怎么写过，最近看到SystemBarTint（原谅我知道的太晚，，，），搜了一下相关资料，觉得挺简单，就用来简单的写一下。<br>先来看一下SystemBarTint的简单介绍：<br>    <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span>  </span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;  </span><br><span class="line">   <span class="keyword">super</span>.onCreate(savedInstanceState);  </span><br><span class="line">   setContentView(R.layout.activity_main);  </span><br><span class="line">   <span class="comment">// 创建状态栏的管理实例  </span></span><br><span class="line">   SystemBarTintManager tintManager = <span class="keyword">new</span> SystemBarTintManager(<span class="keyword">this</span>);  </span><br><span class="line">   <span class="comment">// 激活状态栏设置  </span></span><br><span class="line">   tintManager.setStatusBarTintEnabled(<span class="keyword">true</span>);  </span><br><span class="line">   <span class="comment">// 激活导航栏设置  </span></span><br><span class="line">   tintManager.setNavigationBarTintEnabled(<span class="keyword">true</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>引入之后我们可以设置状态栏的颜色及样式：<br><a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 设置一个颜色给系统栏  </span></span><br><span class="line">tintManager.setTintColor(Color.parseColor(<span class="string">"#99000FF"</span>));  </span><br><span class="line"><span class="comment">// 设置一个样式背景给导航栏  </span></span><br><span class="line">tintManager.setNavigationBarTintResource(R.drawable.my_tint);  </span><br><span class="line"><span class="comment">// 设置一个状态栏资源  </span></span><br><span class="line">tintManager.setStatusBarTintDrawable(MyDrawable);</span><br></pre></td></tr></table></figure></p>
-<p>如何在项目中引用：</p>
-<p>首先添加依赖：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'com.readystatesoftware.systembartint:systembartint:1.0.3'</span></span><br></pre></td></tr></table></figure></p>
-<p>Theme样式：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;style name="AppTheme" parent="AppTheme.Base"/&gt;</span><br><span class="line">  &lt;!-- Base application theme. --&gt;</span><br><span class="line">  &lt;style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar"&gt;</span><br><span class="line">      &lt;item name="colorPrimary"&gt;@color/colorPrimary&lt;/item&gt;</span><br><span class="line">      &lt;item name="colorPrimaryDark"&gt;@color/colorPrimaryDark&lt;/item&gt;</span><br><span class="line">      &lt;item name="windowNoTitle"&gt;true&lt;/item&gt;</span><br><span class="line">      &lt;item name="windowActionBar"&gt;false&lt;/item&gt;</span><br><span class="line">      &lt;item name="drawerArrowStyle"&gt;@style/DrawerArrowStyle&lt;/item&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
-<p>Activity需要extends ActionBarActivity</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@TargetApi</span>(<span class="number">19</span>)</span><br><span class="line">  <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">setTranslucentStatus</span><span class="params">(<span class="keyword">boolean</span> on)</span> </span>&#123;</span><br><span class="line">      Window win = getWindow();</span><br><span class="line">      WindowManager.LayoutParams winParams = win.getAttributes();</span><br><span class="line">      <span class="keyword">final</span> <span class="keyword">int</span> bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;</span><br><span class="line">      <span class="keyword">if</span> (on) &#123;</span><br><span class="line">          winParams.flags |= bits;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          winParams.flags &amp;= ~bits;</span><br><span class="line">      &#125;</span><br><span class="line">      win.setAttributes(winParams);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>在setcontentview前使用上面的方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">setTranslucentStatus(<span class="keyword">true</span>);</span><br><span class="line">      setContentView(R.layout.activity_main);</span><br><span class="line"></span><br><span class="line">      <span class="comment">// create our manager instance after the content view is set</span></span><br><span class="line">      tintManager = <span class="keyword">new</span> SystemBarTintManager(<span class="keyword">this</span>);</span><br><span class="line">      <span class="comment">// enable status bar tint</span></span><br><span class="line">      tintManager.setStatusBarTintEnabled(<span class="keyword">true</span>);</span><br><span class="line">      <span class="comment">// enable navigation bar tint</span></span><br><span class="line">      tintManager.setNavigationBarTintEnabled(<span class="keyword">true</span>);</span><br><span class="line">      tintManager.setTintColor(Color.parseColor(<span class="string">"#bf360c"</span>));</span><br></pre></td></tr></table></figure></p>
-<p>然后需要在xml中的跟布局中添加代码<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android:fitsSystemWindows=<span class="string">"true"</span></span><br><span class="line">       android:clipToPadding=<span class="string">"true"</span></span><br></pre></td></tr></table></figure></p>
-<p>不然view会上移。</p>
-<p> <a href="https://github.com/jgilfelt/SystemBarTint" target="_blank" rel="external">SystemBarTint的github地址</a><br> <a href="https://github.com/wk5683/ToolbarDemo" target="_blank" rel="external">Demo地址</a></p>
+        <p>Rxjava:扩展的观察者模式<br>RxJava 有四个基本概念：Observable (可观察者，即被观察者)、 Observer (观察者)、 subscribe (订阅)、事件。Observable 和 Observer 通过 subscribe() 方法实现订阅关系，从而 Observable 可以在需要的时候发出事件来通知 Observer。<br>与传统观察者模式不同， RxJava 的事件回调方法除了普通事件 onNext() （相当于 onClick() / onEvent()）之外，还定义了两个特殊的事件：onCompleted() 和 onError()。<br>onCompleted(): 事件队列完结。RxJava 不仅把每个事件单独处理，还会把它们看做一个队列。RxJava 规定，当不会再有新的 onNext() 发出时，需要触发 onCompleted() 方法作为标志。<br>onError(): 事件队列异常。在事件处理过程中出异常时，onError() 会被触发，同时队列自动终止，不允许再有事件发出。<br>在一个正确运行的事件序列中, onCompleted() 和 onError() 有且只有一个，并且是事件序列中的最后一个。需要注意的是，onCompleted() 和 onError() 二者也是互斥的，即在队列中调用了其中一个，就不应该再调用另一个。</p>
+<p>以请求天气接口为例：<br><a id="more"></a></p>
+<p>1.0 添加依赖<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'com.squareup.retrofit:retrofit:2.0.0-beta2'</span></span><br><span class="line">   compile <span class="string">'com.squareup.retrofit:converter-gson:2.0.0-beta2'</span></span><br><span class="line">   compile <span class="string">'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'</span></span><br><span class="line">   compile <span class="string">'io.reactivex:rxjava:1.1.2'</span></span><br><span class="line">   compile <span class="string">'io.reactivex:rxandroid:1.1.0'</span></span><br></pre></td></tr></table></figure></p>
+<p>建立一个Weather实体类，具体方式看参考<a href="http://www.haoservice.com/这个网站" target="_blank" rel="external">http://www.haoservice.com/这个网站</a><br>2.0 新建APIService<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">	public interface APIService  &#123;</span><br><span class="line"></span><br><span class="line">    @GET("weather")</span><br><span class="line">    Observable&lt;Weather&gt; getWeatherData(@Query("cityname") String cityname, @Query("key") String apiKey);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">String url = "http://apis.haoservice.com/";</span><br><span class="line">#完整的链接： http://apis.haoservice.com/weather?cityname=北京&amp;key=您申请的APPKEY，分别对应@GET,@Query后的参数</span><br></pre></td></tr></table></figure></p>
+<p>3.0 在Activity中的调用<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getResultByRx</span><span class="params">()</span></span>&#123;</span><br><span class="line">      Retrofit retrofit =<span class="keyword">new</span> Retrofit.Builder().baseUrl(url)</span><br><span class="line">              .addConverterFactory(GsonConverterFactory.create())</span><br><span class="line">              .addCallAdapterFactory(RxJavaCallAdapterFactory.create())</span><br><span class="line">              .build();</span><br><span class="line"></span><br><span class="line">      APIService service = retrofit.create(APIService.class);</span><br><span class="line">      Observable&lt;Weather&gt; observable = service.getWeatherData(<span class="string">"北京"</span>,appkey);</span><br><span class="line">      observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())</span><br><span class="line">                  .subscribe(<span class="keyword">new</span> Subscriber&lt;Weather&gt;() &#123;</span><br><span class="line">                      <span class="meta">@Override</span></span><br><span class="line">                      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCompleted</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="comment">//do your wrok</span></span><br><span class="line"></span><br><span class="line">                      &#125;</span><br><span class="line"></span><br><span class="line">                      <span class="meta">@Override</span></span><br><span class="line">                      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onError</span><span class="params">(Throwable e)</span> </span>&#123;</span><br><span class="line">				<span class="comment">//错误处理</span></span><br><span class="line"></span><br><span class="line">                      &#125;</span><br><span class="line"></span><br><span class="line">                      <span class="meta">@Override</span></span><br><span class="line">                      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onNext</span><span class="params">(Weather weather)</span> </span>&#123;</span><br><span class="line">                          Weather.ResultEntity.TodayEntity todayEntiry = weather.getResult().getToday();</span><br><span class="line">                          Log.d(<span class="string">"---wk---"</span>,<span class="string">"onNext: 城市:"</span> + todayEntiry.getCity() + <span class="string">" 温度:"</span> + todayEntiry.getTemperature());</span><br><span class="line">                      &#125;</span><br><span class="line">                  &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -327,17 +321,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/14/RxJava相关/" rel="next" title="RxJava相关">
-                <i class="fa fa-chevron-left"></i> RxJava相关
+              <a href="/2016/03/22/git使用相关/" rel="next" title="git使用相关">
+                <i class="fa fa-chevron-left"></i> git使用相关
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/22/git使用相关/" rel="prev" title="git使用相关">
-                git使用相关 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -363,8 +353,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/22/Toolbar沉浸式状态栏/"
-           data-title="Toolbar沉浸式状态栏" data-url="http://yoursite.com/2016/03/22/Toolbar沉浸式状态栏/">
+      <div class="ds-thread" data-thread-key="2016/03/23/RxJava,Retrofit在Android中的使用初探/"
+           data-title="RxJava,Retrofit在Android中的使用初探" data-url="http://yoursite.com/2016/03/23/RxJava,Retrofit在Android中的使用初探/">
       </div>
     
   </div>
